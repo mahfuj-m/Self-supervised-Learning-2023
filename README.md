@@ -4,7 +4,7 @@ This project is focused on identifying brain tumors using a self-supervised meth
 
 ### Dataset
 Dataset is available on this webpage: https://figshare.com/articles/dataset/brain_tumor_dataset/1512427/5
-There is a less amount of data available from the source. So, the samples were distributed as follows:  
+.There is a less amount of data available in the source. So, the samples were distributed as follows:  
 Number of training samples: 2451  
 
 Number of finetuning samples: 12  
@@ -40,6 +40,21 @@ As these are not a large models and pretext generation doesn't massive computati
 Processor: Inter Core i5 (1.4Ghz Quar-core)  
 RAM: 8GB
 Built in Intel graphics card  
+The model was pretrained for 20 epochs using the ADAM optimizer with the default learning rate. Subsequently, fine-tuning for the classification model involved 10 epochs with a learning rate of 0.001 using the ADAM optimizer.
 
 ### Result
+<table>
+  <tr>
+    <td align="center">
+      <img src="media/loss.png" alt="Positive Pair" />
+      <br />
+      <em>Fine Tuning Loss </em>
+    </td>
+    <td align="center">
+      <img src="media/accuracy.png" alt="Negative Pair" />
+      <br />
+      <em>Fine Tuning Accuracy</em>
+    </td>
+  </tr>
+</table>
 
