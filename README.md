@@ -57,6 +57,7 @@ The model was pretrained for 20 epochs using the ADAM optimizer with the default
     </td>
   </tr>
 </table>
+
 Now the performance of both model
 <table>
   <tr>
