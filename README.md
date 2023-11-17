@@ -17,5 +17,18 @@ This model functions similarly to an unsupervised model. The training samples we
 
 ### Contrastive model
 To train the model, 2000 positive and negative pairs were generated. The function responsible for generating these pairs serves as a pretext generation for this model. Although labels were fed into the network, they only indicate the positive and negative pairs and not the original label. Here are examples of positive and negative pairs.  
-![postive](media/positive.png)   ![negative](media/negative.png)  
-*Positive Pair*  *Negative Pair*
+<table>
+  <tr>
+    <td align="center">
+      <img src="media/positive.png" alt="Positive Pair" />
+      <br />
+      <em>Positive Pair</em>
+    </td>
+    <td align="center">
+      <img src="media/negative.png" alt="Negative Pair" />
+      <br />
+      <em>Negative Pair</em>
+    </td>
+  </tr>
+</table>
+
