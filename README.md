@@ -4,7 +4,7 @@ This project is focused on identifying brain tumors using a self-supervised meth
 
 ### Dataset
 Dataset is available on this webpage: https://figshare.com/articles/dataset/brain_tumor_dataset/1512427/5
-There is a less amount of data available from the source. So, the samples were distributed as follows:
+There is a less amount of data available from the source. So, the samples were distributed as follows:  
 Number of training samples: 2451  
 
 Number of finetuning samples: 12  
@@ -13,4 +13,8 @@ Number of testing samples: 490
 
 ### Encoder model
 This model functions similarly to an unsupervised model. The training samples were masked using a random mask size. During training, both the masked image and the original image are passed through the network to help the model learn the missing parts of an image. Here's an example of an image alongside the same image after masking.
-![mmasked](media/masked.png)
+![mmasked](media/masked.png)  
+
+### Contrastive model
+To train the model, 2000 positive and negative pairs were generated. The function responsible for generating these pairs serves as a pretext generation for this model. Although labels were fed into the network, they only indicate the positive and negative pairs and not the original label. Here are examples of positive and negative pairs.  
+![postive](media/positive.png)   ![negative](media/negative.png)  
