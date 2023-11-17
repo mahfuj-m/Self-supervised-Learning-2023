@@ -32,3 +32,6 @@ To train the model, 2000 positive and negative pairs were generated. The functio
   </tr>
 </table>
 
+### Self-supervised
+As the primary objective of this project is to introduce SSL (Self-Supervised Learning). The previously mentioned models function as a means of pretraining images without explicit labeling. In the encoder model, the algorithm identifies image features by reconstructing the missing parts. On the other hand, the contrastive model determines the relationship between pairs, discerning whether they are negative or positive.
+
