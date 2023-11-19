@@ -70,3 +70,6 @@ Now the performance of both model
   </tr>
 </table>
 
+### How to run
+Open the Training.ipynb. Run all the cells. It will reproduce the results.
+
