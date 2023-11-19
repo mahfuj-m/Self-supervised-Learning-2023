@@ -43,6 +43,7 @@ Built in Intel graphics card
 The model was pretrained for 20 epochs using the ADAM optimizer with the default learning rate. Subsequently, fine-tuning for the classification model involved 10 epochs with a learning rate of 0.001 using the ADAM optimizer.
 
 ### Result
+Training loss and accuracy of  the fine tuning models are presented in the below graphs. Feature extracted from the encooder model performed best than the contrastive model.
 <table>
   <tr>
     <td align="center">
